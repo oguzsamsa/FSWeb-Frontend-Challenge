@@ -1,19 +1,23 @@
 const Header = () => {
   return (
     <div className="bg-white w-full p-4">
-      <div className="w-4/5 max-w-4xl mx-auto flex justify-end gap-4 font-inter font-bold">
-        <div className="text-[#777777]">
-          <input type="checkbox" />
-          DARK MODE
-        </div>
+      <div className="w-4/5 max-w-4xl mx-auto flex items-center justify-end gap-4 font-inter font-bold">
+        <label
+          htmlFor="darkMode"
+          className="bg-[#4731D3] relative w-10 h-5 rounded-full cursor-pointer"
+        >
+          <input type="checkbox" id="darkMode" className="sr-only peer" />
+          <span className="w-2/5 h-3/4 bg-white absolute rounded-full left-[2px] top-[3px] peer-checked:left-[22px] peer-checked:bg-[#FFE86E]"></span>
+        </label>
+        <p className="text-[#777777] tracking-wider">DARK MODE</p>
         <p className="text-[#777777]">|</p>
-        <p className="text-[#777777]">
+        <p className="text-[#777777] tracking-wider">
           <span className="text-[#4731D3]">TÜRKÇE</span>'YE GEÇ
         </p>
       </div>
       <div className="w-4/5 max-w-4xl mx-auto flex text-black justify-between mt-4">
         <div className="text-[7B61FF] font-semibold py-3 px-4 rounded-full bg-[#EEEBFF]">
-          A
+          O
         </div>
         <nav className="flex items-center font-inter gap-12 text-lg text-[#6B7280] font-medium">
           <div>Skills</div>
@@ -23,18 +27,18 @@ const Header = () => {
           </div>
         </nav>
       </div>
-      <div className="w-4/5 max-w-4xl mx-auto flex mt-12 gap-4 items-center">
+      <div className="w-4/5 max-w-4xl mx-auto flex flex-col  mt-12 gap-4 items-center md:flex-row">
         <div className="flex flex-col w-3/5 gap-6">
-          <div className="flex items-center">
+          <div className="flex items-center ">
             <hr className="w-[6.375rem] bg-[#4338CA] border-[#4338CA] mr-4" />
-            <p className="text-[#4338CA] text-xl font-medium">Almila Su</p>
+            <p className="text-[#4338CA] text-xl font-medium">Oğuz</p>
           </div>
 
           <h1 className="text-[#1F2937] font-bold text-5xl">
             Creative thinker Minimalism lover
           </h1>
           <h2 className="text-[#6B7280] text-lg">
-            Hi, I’m Almila. I’m a full-stack developer. If you are looking for a
+            Hi, I’m Oğuz. I’m a full-stack developer. If you are looking for a
             Developer who to craft solid and scalable frontend products with
             great user experiences. Let’s shake hands with me.
           </h2>
@@ -74,7 +78,7 @@ const Header = () => {
             </button>
           </div>
         </div>
-        <div className="w-2/5 min-w-[300px]">
+        <div className="w-2/5 min-w-[300px] order-first md:order-none">
           <img
             className="w-full block h-auto"
             src="./../../public/assets/hero-right.png"

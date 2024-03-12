@@ -2,9 +2,11 @@ const Profile = () => {
   return (
     <div className="w-full bg-white text-black">
       <div className="w-4/5 max-w-4xl mx-auto flex flex-col ">
-        <h1 className="text-[#1F2937] font-semibold text-5xl mb-6">Profile</h1>
-        <div className="flex justify-between">
-          <div className=" w-3/8">
+        <h1 className="text-[#1F2937] font-semibold text-5xl mb-6 text-center md:text-start">
+          Profile
+        </h1>
+        <div className="flex flex-col items-center gap-4 md:flex-row md:justify-between">
+          <div className=" w-3/5 md:w-3/8">
             <h2 className="text-[#4338CA] font-medium text-3xl mb-4">
               Profile
             </h2>
@@ -25,7 +27,7 @@ const Profile = () => {
               <p className="w-1/2">Frontend, UI</p>
             </div>
           </div>
-          <div className="w-1/2">
+          <div className="w-3/5 md:w-1/2">
             <h2 className="text-[#4338CA] font-medium text-3xl mb-4">
               About Me
             </h2>
