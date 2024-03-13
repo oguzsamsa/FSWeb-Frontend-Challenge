@@ -1,8 +1,20 @@
 import { useContext } from "react";
 import { DarkModeContext } from "../contexts/DarkModeContext";
+import { LanguageContext } from "../contexts/LanguageContext";
 
 const Header = () => {
   const { darkMode, toggleTheme } = useContext(DarkModeContext);
+  const { apiData, toggleLanguage } = useContext(LanguageContext);
+
+  const apiHeader = apiData.header;
+  const apiHero = apiData.hero;
+
+  const scroll = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <div className={` bg-white dark:bg-[#252128] w-full p-4`}>
@@ -18,15 +30,21 @@ const Header = () => {
             checked={darkMode}
             onChange={toggleTheme}
           />
-          <span className="w-2/5 h-3/4 bg-[#FFE86E] absolute rounded-full left-[2px] top-[3px] peer-checked:left-[22px]"></span>
+          <span className="w-2/5 h-3/4 bg-[#FFE86E] absolute rounded-full left-[22px] top-[3px] peer-checked:left-[2px]"></span>
         </label>
         <p className="text-[#777777] dark:text-[#D9D9D9] tracking-wider">
-          DARK MODE
+          {darkMode ? apiHeader.lightMode : apiHeader.darkMode}
         </p>
         <p className="text-[#777777] dark:text-[#D9D9D9]">|</p>
-        <p className="text-[#777777] dark:text-[#D9D9D9] tracking-wider">
-          <span className="text-[#4731D3] dark:text-[#BAB2E7]">TÜRKÇE</span>'YE
-          GEÇ
+        <p
+          className="text-[#777777] dark:text-[#D9D9D9] tracking-wider cursor-pointer"
+          onClick={toggleLanguage}
+        >
+          {apiHeader.languagePrefix}
+          <span className="text-[#4731D3] dark:text-[#BAB2E7]">
+            {apiHeader.language}
+          </span>
+          {apiHeader.languageSuffix}
         </p>
       </div>
       <div className="w-4/5 max-w-4xl mx-auto flex text-black justify-between mt-4">
@@ -34,10 +52,16 @@ const Header = () => {
           O
         </div>
         <nav className="flex items-center font-inter gap-12 text-lg text-[#6B7280] font-medium">
-          <div>Skills</div>
-          <div>Projects</div>
-          <div className="text-[#3730A3] py-2 px-4 border border-[#3730A3] rounded">
-            Hire me
+          <div className="cursor-pointer" onClick={() => scroll("skills")}>
+            {apiHeader.skills}
+          </div>
+          <div className="cursor-pointer" onClick={() => scroll("projects")}>
+            {apiHeader.projects}
+          </div>
+          <div className="text-[#3730A3] bg-white py-2 px-4 border border-[#3730A3] rounded ">
+            <a href={apiHero.links.hireMe} target="_blank">
+              {apiHeader.hireMe}
+            </a>
           </div>
         </nav>
       </div>
@@ -46,23 +70,29 @@ const Header = () => {
           <div className="flex items-center ">
             <hr className="w-[6.375rem] border-[#4338CA] dark:border-[#B7AAFF]  mr-4" />
             <p className="text-[#4338CA] dark:text-[#B7AAFF] text-xl font-medium">
-              Oğuz
+              {apiHero.name}
             </p>
           </div>
 
           <h1 className="text-[#1F2937] dark:text-[#AEBCCF] font-bold text-5xl">
-            Creative thinker Minimalism lover
+            {apiHero.title}
           </h1>
           <h2 className="text-[#6B7280] dark:text-white text-lg">
-            Hi, I’m Oğuz. I’m a full-stack developer. If you are looking for a
-            Developer who to craft solid and scalable frontend products with
-            great user experiences. Let’s shake hands with me.
+            {apiHero.description}
           </h2>
           <div className="text-[#3730A3] text-lg font-medium flex gap-2">
-            <button className="px-5 py-2 text-white bg-[#3730A3] dark:bg-[#E1E1FF] dark:text-black rounded">
-              Hire me
-            </button>
-            <button className="flex items-center px-3 py-2 gap-2 border border-[#3730A3] dark:border-[#E1E1FF] dark:bg-[#383838] dark:text-[#E1E1FF] rounded">
+            <a
+              target="_blank"
+              href={apiHero.links.hireMe}
+              className="px-5 py-2 text-white bg-[#3730A3] dark:bg-[#E1E1FF] dark:text-black rounded"
+            >
+              {apiHero.hireMe}
+            </a>
+            <a
+              target="_blank"
+              href={apiHero.links.github}
+              className="flex items-center px-3 py-2 gap-2 border border-[#3730A3] dark:border-[#E1E1FF] dark:bg-[#383838] dark:text-[#E1E1FF] rounded"
+            >
               <svg
                 width="26"
                 height="28"
@@ -75,9 +105,13 @@ const Header = () => {
                   fill={`${darkMode ? "#BAB2E7" : "#3730A3"}`}
                 />
               </svg>{" "}
-              Github
-            </button>
-            <button className="flex items-center px-3 py-2 gap-2 border border-[#3730A3] dark:border-[#E1E1FF] dark:bg-[#383838] dark:text-[#E1E1FF] rounded">
+              {apiHero.github}
+            </a>
+            <a
+              target="_blank"
+              href={apiHero.links.linkedin}
+              className="flex items-center px-3 py-2 gap-2 border border-[#3730A3] dark:border-[#E1E1FF] dark:bg-[#383838] dark:text-[#E1E1FF] rounded"
+            >
               <svg
                 width="24"
                 height="26"
@@ -90,16 +124,12 @@ const Header = () => {
                   fill={`${darkMode ? "#BAB2E7" : "#3730A3"}`}
                 />
               </svg>
-              Linkedin
-            </button>
+              {apiHero.linkedin}
+            </a>
           </div>
         </div>
         <div className="w-2/5 min-w-[300px] order-first md:order-none">
-          <img
-            className="w-full block h-auto"
-            src="./../../public/assets/hero-right.png"
-            alt=""
-          />
+          <img className="w-full block h-auto" src={apiHero.heroImage} alt="" />
         </div>
       </div>
     </div>

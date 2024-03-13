@@ -5,6 +5,7 @@ import Profile from "./components/profile";
 import Projects from "./components/projects";
 import Skills from "./components/skills";
 import { DarkModeContext } from "./contexts/DarkModeContext";
+import { Route } from "react-router-dom";
 
 function App() {
   const { darkMode } = useContext(DarkModeContext);
