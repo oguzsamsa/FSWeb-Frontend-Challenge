@@ -1,13 +1,13 @@
 const Profile = () => {
   return (
-    <div className="w-full bg-white text-black">
+    <div className="w-full bg-white text-black dark:text-white dark:bg-[#252128]">
       <div className="w-4/5 max-w-4xl mx-auto flex flex-col ">
-        <h1 className="text-[#1F2937] font-semibold text-5xl mb-6 text-center md:text-start">
+        <h1 className="text-[#1F2937] dark:text-[#AEBCCF] font-semibold text-5xl mb-6 text-center md:text-start">
           Profile
         </h1>
         <div className="flex flex-col items-center gap-4 md:flex-row md:justify-between">
           <div className=" w-3/5 md:w-3/8">
-            <h2 className="text-[#4338CA] font-medium text-3xl mb-4">
+            <h2 className="text-[#4338CA] dark:text-[#B7AAFF] font-medium text-3xl mb-4">
               Profile
             </h2>
             <div className="flex mb-2">
@@ -28,7 +28,7 @@ const Profile = () => {
             </div>
           </div>
           <div className="w-3/5 md:w-1/2">
-            <h2 className="text-[#4338CA] font-medium text-3xl mb-4">
+            <h2 className="text-[#4338CA] dark:text-[#B7AAFF] font-medium text-3xl mb-4">
               About Me
             </h2>
             <p className="text-[#6B7280] mb-4">
