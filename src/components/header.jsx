@@ -31,6 +31,7 @@ const Header = () => {
             onChange={toggleTheme}
           />
           <span className="w-2/5 h-3/4 bg-[#FFE86E] absolute rounded-full left-[22px] top-[3px] peer-checked:left-[2px]"></span>
+          <span className="w-2/5 h-3/4 bg-[#3A3A3A] absolute rounded-full invisible peer-checked:visible peer-checked:left-[7px] peer-checked:top-[3px]"></span>
         </label>
         <p className="text-[#777777] dark:text-[#D9D9D9] tracking-wider">
           {darkMode ? apiHeader.lightMode : apiHeader.darkMode}
@@ -51,7 +52,7 @@ const Header = () => {
         <div className="text-[#7B61FF] font-semibold py-3 px-4 rounded-full bg-[#EEEBFF] dark:text-[#8F88FF] dark:bg-[#4731D3]">
           O
         </div>
-        <nav className="flex items-center font-inter gap-12 text-lg text-[#6B7280] font-medium">
+        <nav className="flex items-center font-inter gap-4 md:gap-12 text-lg text-[#6B7280] font-medium">
           <div className="cursor-pointer" onClick={() => scroll("skills")}>
             {apiHeader.skills}
           </div>
@@ -80,7 +81,7 @@ const Header = () => {
           <h2 className="text-[#6B7280] dark:text-white text-lg">
             {apiHero.description}
           </h2>
-          <div className="text-[#3730A3] text-lg font-medium flex flex-wrap gap-2 justify-center md:justify-start ">
+          <div className="text-[#3730A3] text-lg font-medium flex flex-wrap gap-2  ">
             <a
               target="_blank"
               href={apiHero.links.hireMe}

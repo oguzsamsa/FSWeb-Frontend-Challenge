@@ -28,10 +28,12 @@ const Profile = () => {
             <h2 className="text-[#4338CA] dark:text-[#B7AAFF] font-medium text-3xl mb-4">
               {profile.aboutMe.title}
             </h2>
-            <p className="text-[#6B7280] mb-4">
+            <p className="text-[#6B7280] dark:text-white mb-4">
               {profile.aboutMe.descriptions[0]}
             </p>
-            <p className="text-[#6B7280]">{profile.aboutMe.descriptions[1]}</p>
+            <p className="text-[#6B7280] dark:text-white">
+              {profile.aboutMe.descriptions[1]}
+            </p>
           </div>
         </div>
         <hr className="bg-[#BAB2E7] border border-[#BAB2E7] w-full mx-auto my-8" />
