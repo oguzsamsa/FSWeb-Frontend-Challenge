@@ -152,7 +152,7 @@
             "name": "Oğuz",
             "title": "Yaratıcı fikirler Minimalist çözümler",
             "description": "Merhaba, Ben Oğuz. Full-stack geliştiriciyim. Sağlam ve ölçeklenebilir front-end ürünleriyle harika kullanıcı deneyimleri yaratmak istiyorsanız, tanışalım mı?",
-            "heroImage": "./../../public/Assets/Images/hero-right.png",
+            "heroImage": "./../../Assets/Images/hero-right.png",
             "hireMe": "İletişim",
             "github": "Github",
             "linkedin": "Linkedin",

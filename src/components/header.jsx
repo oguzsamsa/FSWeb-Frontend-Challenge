@@ -66,7 +66,7 @@ const Header = () => {
         </nav>
       </div>
       <div className="w-4/5 max-w-4xl mx-auto flex flex-col  mt-12 gap-4 items-center md:flex-row">
-        <div className="flex flex-col w-3/5 gap-6">
+        <div className="flex flex-col w-3/5 min-w-60 gap-6">
           <div className="flex items-center ">
             <hr className="w-[6.375rem] border-[#4338CA] dark:border-[#B7AAFF]  mr-4" />
             <p className="text-[#4338CA] dark:text-[#B7AAFF] text-xl font-medium">
@@ -80,7 +80,7 @@ const Header = () => {
           <h2 className="text-[#6B7280] dark:text-white text-lg">
             {apiHero.description}
           </h2>
-          <div className="text-[#3730A3] text-lg font-medium flex gap-2">
+          <div className="text-[#3730A3] text-lg font-medium flex flex-wrap gap-2 justify-center md:justify-start ">
             <a
               target="_blank"
               href={apiHero.links.hireMe}
@@ -128,7 +128,7 @@ const Header = () => {
             </a>
           </div>
         </div>
-        <div className="w-2/5 min-w-[300px] order-first md:order-none">
+        <div className="w-3/5 md:w-2/5 min-w-60 order-first md:order-none">
           <img className="w-full block h-auto" src={apiHero.heroImage} alt="" />
         </div>
       </div>

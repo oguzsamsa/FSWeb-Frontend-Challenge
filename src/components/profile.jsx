@@ -11,7 +11,7 @@ const Profile = () => {
           {profile.title}
         </h1>
         <div className="flex flex-col items-center gap-4 md:flex-row md:justify-between md:items-stretch">
-          <div className="flex flex-col gap-2 mt-2 w-3/5 md:w-3/8">
+          <div className="flex flex-col gap-2  w-3/5 md:w-3/8">
             <h2 className="text-[#4338CA] dark:text-[#B7AAFF] font-medium text-3xl mb-2">
               {profile.profileInformation.title}
             </h2>
