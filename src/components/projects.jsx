@@ -14,7 +14,11 @@ const Projects = () => {
           {projects.items.map((item) => {
             return (
               <div className="w-3/5 md:w-1/4">
-                <img className="w-full" src={item.image} alt={item.title} />
+                <img
+                  className="w-full h-36 object-cover"
+                  src={item.image}
+                  alt={item.title}
+                />
                 <h2 className="text-[#4338CA] dark:text-[#CFCBFF] font-medium text-3xl my-2">
                   {item.title}
                 </h2>

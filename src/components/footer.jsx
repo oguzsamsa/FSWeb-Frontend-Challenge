@@ -23,13 +23,6 @@ const Footer = () => {
           <div className="flex flex-col  gap-2 md:flex-row md:items-stretch">
             <a
               target="_blank"
-              className="font-medium text-lg leading-normal text-[#0A0A14] dark:text-[#E1E1FF]"
-              href={footer.links.personalBlog}
-            >
-              {footer.personalBlog}
-            </a>
-            <a
-              target="_blank"
               className="font-medium text-lg leading-normal text-[#00AB6B] dark:text-[#17D18B]"
               href={footer.links.github}
             >

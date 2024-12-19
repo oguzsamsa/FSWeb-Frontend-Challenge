@@ -21,7 +21,7 @@
             "links": {
                 "github": "https://www.github.com/oguzsamsa",
                 "linkedin": "https://www.linkedin.com/in/oguzsamsa/",
-                "hireMe": "https://www.linkedin.com/in/oguzsamsa/"
+                "hireMe": "mailto:oguzsamsa@gmail.com"
             }
 
         },
@@ -29,15 +29,15 @@
             "title": "Skills",
             "items": [{
                 "name": "JavaScript",
-                "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                "description": "I use JavaScript to develop dynamic and interactive web applications."
             },
             {
                 "name": "React.Js",
-                "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                "description": "With React.js, I build modern and user-friendly web applications. I leverage a component-based architecture to make my projects more maintainable."
             },
             {
-                "name": "Node.Js",
-                "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                "name": "Java",
+                "description": "I build robust and reliable backend systems using Java and Spring Boot."
             }]
         },
         "profile": {
@@ -65,8 +65,7 @@
             "aboutMe": {
                 "title": "About Me",
                 "descriptions": [
-                    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
-                    "Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!"
+                    "A software developer with a background in mechanical engineering, I specialize in building modern web applications using technologies like React, JavaScript, Java, Spring Boot, and Tailwind. Passionate about problem-solving, user-centric projects, and continuous learning."
                 ]
             }
         },
@@ -74,51 +73,51 @@
             "title": "Projects",
             "items": [
                 {
-                    "title": "Workintech",
-                    "image": "./../../Assets/Images/projects-1.png",
-                    "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+                    "title": "PingPanda",
+                    "image": "./../../Assets/Images/projects-1.jpg",
+                    "description": "PingPanda is a SaaS platform developed using Next.js and TypeScript. The modern user interface is built with shadcn-ui, and users can explore real-time event messaging via Discord integration and secure payment processing for PRO plan purchases. Additionally, the platform features a visually striking landing page with custom illustrations and an intuitive event monitoring dashboard.",
                     "technologies": [
-                        "react",
-                        "redux",
-                        "axios"
+                        "next.js",
+                        "typescript",
+                        "tailwindcss"
                     ],
                     "github": "Github",
                     "viewSite": "View Site",
                     "links": {
-                        "github": "#",
-                        "viewSite": "#"
+                        "github": "https://github.com/oguzsamsa/pingpanda",
+                        "viewSite": "https://pingpanda-lake.vercel.app/"
                     }
                 },
                 {
-                    "title": "Random Jokes",
-                    "image": "./../../Assets/Images/projects-2.png",
-                    "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+                    "title": "Samsawear",
+                    "image": "./../../Assets/Images/projects-2.jpg",
+                    "description": "Samsawear is an e-commerce platform that allows users to easily explore clothing products across various categories. Developed with React and Redux, the platform offers essential features such as user registration, login, adding products to the cart, and secure payment processing. Its modern and user-friendly design ensures a smooth and enjoyable shopping experience. Additionally, the mobile-responsive layout provides an excellent user experience across all devices.",
                     "technologies": [
                         "react",
                         "redux",
-                        "axios"
+                        "tailwindcss"
                     ],
                     "github": "Github",
                     "viewSite": "View Site",
                     "links": {
-                        "github": "#",
-                        "viewSite": "#"
+                        "github": "https://github.com/oguzsamsa/samsawear-ecommock",
+                        "viewSite": "https://samsawear-ecommock.vercel.app/"
                     }
                 },
                 {
-                    "title": "Journey",
-                    "image": "./../../Assets/Images/projects-3.png",
-                    "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+                    "title": "Portfolio",
+                    "image": "./../../Assets/Images/projects-3.jpg",
+                    "description": "My personal portfolio website, built with React and styled with Tailwind CSS, showcases my skills, projects, and experience. The site is fully responsive, providing a seamless user experience across devices. I used this platform to demonstrate my ability to develop scalable and maintainable web applications, and continuously update it as I enhance my skill set and portfolio.",
                     "technologies": [
                         "react",
-                        "redux",
+                        "tailwindcss",
                         "axios"
                     ],
                     "github": "Github",
                     "viewSite": "View Site",
                     "links": {
-                        "github": "#",
-                        "viewSite": "#"
+                        "github": "https://github.com/oguzsamsa/FSWeb-Frontend-Challenge",
+                        "viewSite": "https://oguzsamsa.vercel.app/"
                     }
                 }
             ]
@@ -158,7 +157,8 @@
             "linkedin": "Linkedin",
             "links": {
                 "github": "https://www.github.com/oguzsamsa",
-                "linkedin": "https://www.linkedin.com/in/oguzsamsa/"
+                "linkedin": "https://www.linkedin.com/in/oguzsamsa/",
+                "hireMe": "mailto:oguzsamsa@gmail.com"
             }
 
         },
@@ -166,15 +166,15 @@
             "title": "Beceriler",
             "items": [{
                 "name": "JavaScript",
-                "description": "Acıyı seven, arayan ve ona sahip olmak isteyen hiç kimse yoktur. Nedeni basit. Çünkü o acıdır, Bu nedenle, bilge kişi bu konularda her zaman şu seçme ilkesine bağlı kalır"
+                "description": "Dinamik ve etkileşimli web uygulamaları geliştirmek için JavaScript kullanıyorum."
             },
             {
                 "name": "React.Js",
-                "description": "Ama size bir zevki kınama ve acıyı övme şeklindeki tüm bu yanlış fikrin nasıl doğduğunu açıklamalıyım ve size sistemin tam bir açıklamasını vereceğim ve gerçeğin büyük kaşifinin gerçek öğretilerini açıklayacağım."
+                "description": "React.js ile modern ve kullanıcı dostu web uygulamaları geliştiriyorum. Bileşen tabanlı mimari ile projelerimi daha sürdürülebilir hale getiriyorum."
             },
             {
-                "name": "Node.Js",
-                "description": "İnsan mutluluğunun ustası. Hiç kimse zevkin kendisini reddetmez, sevmez veya bundan kaçınmaz, çünkü bu zevktir, çünkü zevkin peşinden gitmeyi bilmeyenler rasyonel olarak son derece acı verici sonuçlarla karşılaşırlar."
+                "name": "Java",
+                "description": "Java ve Spring Boot kullanarak güçlü ve güvenilir backend sistemleri inşa ediyorum."
             }]
         },
         "profile": {
@@ -202,8 +202,7 @@
             "aboutMe": {
                 "title": "Hakkımda",
                 "descriptions": [
-                    "Ne de seven veya seven kimse yoktur. acının peşinden koşar ya da kendi kendine acıyı elde etmek ister, çünkü bu acıdır",
-                    "Ama can sıkıcı sonuçları olmayan bir zevkin tadını çıkarmayı seçen veya sonuçta hiçbir haz vermeyen bir acıdan kaçınan bir adamda kim kusur bulmaya hakkı vardır"
+                    "Makine mühendisliği geçmişine sahip bir yazılımcı olarak, React, JavaScript, Java, Spring Boot ve Tailwind gibi teknolojilerle modern web uygulamaları geliştiriyorum. Problem çözme, kullanıcı odaklı projeler ve sürekli öğrenme konusunda tutkuluyum."
                 ]
             }
         },
@@ -211,51 +210,51 @@
             "title": "Projeler",
             "items": [
                 {
-                    "title": "Workintech",
-                    "image": "./../../Assets/Images/projects-1.png",
-                    "description": "Kullanıcılarınızın hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan basit, özelleştirilebilir, minimal kurulumlu bir çerez eklentisi. Bu, vanilya JS, SCSS ve Parcel Bundler ile oluşturulmuştur ve bir NPM paketi olarak mevcuttur ve git deposu, kod ve temalarda her türlü özelleştirmeyi mümkün kılar.",
+                    "title": "PingPanda",
+                    "image": "./../../Assets/Images/projects-1.jpg",
+                    "description": "PingPanda, Next.js ve TypeScript kullanarak geliştirilmiş bir SaaS platformudur. Modern kullanıcı arayüzü, shadcn-ui ile inşa edildi ve kullanıcılar, gerçek zamanlı etkinlik mesajlaşmaları ile Discord entegrasyonunu ve PRO plan satın alımları için güvenli ödeme işleme yeteneklerini keşfedebilir. Ayrıca, özel illüstrasyonlarla tasarlanmış çarpıcı bir landing page ve kullanıcı dostu bir etkinlik izleme paneli sunulmaktadır.",
                     "technologies": [
-                        "react",
-                        "redux",
-                        "axios"
+                        "next.js",
+                        "typescript",
+                        "tailwindcss"
                     ],
                     "github": "Github",
                     "viewSite": "Görüntüle",
                     "links": {
-                        "github": "#",
-                        "viewSite": "#"
+                        "github": "https://github.com/oguzsamsa/pingpanda",
+                        "viewSite": "https://pingpanda-lake.vercel.app/"
                     }
                 },
                 {
-                    "title": "Random Jokes",
-                    "image": "./../../Assets/Images/projects-2.png",
-                    "description": "Kullanıcılarınızın hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan basit, özelleştirilebilir, minimal kurulumlu bir çerez eklentisi. Bu, vanilya JS, SCSS ve Parcel Bundler ile oluşturulmuştur ve bir NPM paketi olarak mevcuttur ve git deposu, kod ve temalarda her türlü özelleştirmeyi mümkün kılar.",
+                    "title": "Samsawear",
+                    "image": "./../../Assets/Images/projects-2.jpg",
+                    "description": "Samsawear, kullanıcıların farklı kategorilerdeki giyim ürünlerini kolayca keşfetmesini sağlayan bir e-ticaret platformudur. React ve Redux ile geliştirilen platform, kullanıcı kaydı, oturum açma, ürün sepete ekleme ve ödeme işlemleri gibi temel özellikleri sunmaktadır. Modern ve kullanıcı dostu tasarımı sayesinde alışveriş deneyimini sorunsuz ve keyifli hale getiriyor. Ayrıca, mobil uyumlu yapısıyla her cihazda mükemmel bir kullanım deneyimi sunmaktadır.",
                     "technologies": [
                         "react",
                         "redux",
-                        "axios"
+                        "tailwindcss"
                     ],
                     "github": "Github",
                     "viewSite": "Görüntüle",
                     "links": {
-                        "github": "#",
-                        "viewSite": "#"
+                        "github": "https://github.com/oguzsamsa/samsawear-ecommock",
+                        "viewSite": "https://samsawear-ecommock.vercel.app/"
                     }
                 },
                 {
-                    "title": "Journey",
-                    "image": "./../../Assets/Images/projects-3.png",
-                    "description": "Kullanıcılarınızın hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan basit, özelleştirilebilir, minimal kurulumlu bir çerez eklentisi. Bu, vanilya JS, SCSS ve Parcel Bundler ile oluşturulmuştur ve bir NPM paketi olarak mevcuttur ve git deposu, kod ve temalarda her türlü özelleştirmeyi mümkün kılar.",
+                    "title": "Portfolyo",
+                    "image": "./../../Assets/Images/projects-3.jpg",
+                    "description": "React ile geliştirdiğim ve Tailwind CSS ile stil verdiğim kişisel portföy sitem, becerilerimi, projelerimi ve deneyimlerimi sergiliyor. Site, her cihazda sorunsuz bir kullanıcı deneyimi sağlayacak şekilde tamamen uyumlu olarak tasarlandı. Bu platformu, ölçeklenebilir ve sürdürülebilir web uygulamaları geliştirme becerimi göstermek için kullandım ve becerilerimi geliştirdikçe portföyümü sürekli güncel tutuyorum.",
                     "technologies": [
                         "react",
-                        "redux",
+                        "tailwindcss",
                         "axios"
                     ],
                     "github": "Github",
                     "viewSite": "Görüntüle",
                     "links": {
-                        "github": "#",
-                        "viewSite": "#"
+                        "github": "https://github.com/oguzsamsa/FSWeb-Frontend-Challenge",
+                        "viewSite": "https://oguzsamsa.vercel.app/"
                     }
                 }
             ]
